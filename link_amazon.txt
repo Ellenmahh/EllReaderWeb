@@ -1,0 +1,1 @@
+http://sample-env-2.p72absbyrf.us-west-2.elasticbeanstalk.com
