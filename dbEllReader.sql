@@ -18,6 +18,7 @@
 --
 -- Table structure for table `tblfavoritos`
 --
+use outsidet_dbellreader;
 
 DROP TABLE IF EXISTS `tblfavoritos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

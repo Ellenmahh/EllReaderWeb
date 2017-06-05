@@ -8,7 +8,7 @@
     public $pdf;
 	public $idgenero;
 	public $favoritos;
-	
+
 
     public function __construct($id, $imagemCapa, $titulo, $pdf, $idgenero,$favoritos){
         $this->id = $id;
@@ -59,7 +59,7 @@
             $db = Db::getInstance();
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $sql = "SELECT * FROM tblLivro where titulo like '%". $query ."%';";
+            $sql = "SELECT * FROM tbllivro where titulo like '%". $query ."%';";
             $req = $db->prepare($sql);
             $req->execute();
 
@@ -73,7 +73,7 @@
                      $item['titulo'],
                      $item['pdf'],
 					 $item['idgenero']
-					
+
                     );
             }
 
